@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOG BREEDS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <button id="addBreedButton" onclick="addNewBreed()">Add Breed</button>
+    <h1>Dog Breeds</h1>
+    <div id="searchContainer">
+      <input type="text" id="searchInput" placeholder="Search for a breed">
+      <button id="searchButton" onclick="searchDogBreeds()">Search</button>
+    </div>
+  </nav>
+  <div id="contentContainer">
+    <ul id="breedList"></ul>
+    <div id="dogImageContainer">
+      <img id="dogImage" src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Default Dog Image">
+      <div id="loader"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

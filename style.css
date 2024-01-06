@@ -1,0 +1,196 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #d3296d;
+    padding: 10px;
+    color: #fff;
+  }
+
+  #searchContainer {
+    text-transform: uppercase;
+  }
+
+  #searchInput {
+    padding: 12px ;
+    padding-left: 25px;
+    border: 1px white;
+    padding-right: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+    border-radius: 20px;
+  }
+
+  #searchButton {
+    padding: 12px;
+    cursor: pointer;
+    background-color:#eb8fac;
+    color: #fff;
+    padding-left: 25px;
+    font-weight: bold;
+    padding-right: 25px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+
+  #addBreedButton {
+    padding: 12px;
+    cursor: pointer;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    background-color: #eb8fac;
+    color: #ffffff;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+
+  #contentContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #breedList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #breedList li {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    flex-basis: calc(20% - 40px);
+    flex-grow: 1;
+  }
+
+  #breedList li:hover {
+    background-color: #e0e0e0;
+  }
+
+  #dogImageContainer {
+    width: 50%;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  #dogImage {
+    max-width: 800px;
+    max-height: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #dogImage.loading {
+    filter: blur(5px);
+  }
+
+  #loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #f3f3f3; 
+    border-top: 6px solid #3498db; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media only screen and (max-width: 789px) {
+  nav {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  #searchContainer {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 20PX;
+    
+  }
+
+  #searchInput {
+    margin-left: 20PX;
+    margin-right: 20px;
+    height: -50px;
+   
+  }
+
+  #searchButton {
+    margin-left: 270px;
+    margin-bottom: 10PX;
+  }
+
+  #addBreedButton {
+    margin-left: 125PX;
+    margin-top: 20px;
+  }
+
+  #contentContainer {
+    flex-direction: column;
+  }
+
+  #dogImageContainer {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  #dogImage {
+    max-width: 100%; 
+    max-height: 350px;
+    border-radius: 300px;
+  }
+
+  #imageCaption {
+    margin-top: 10px;
+  }
+
+  #zoomText {
+    margin-top: 5px;
+  }
+  h1{
+    margin-left: 120px;
+  }
+}
+
